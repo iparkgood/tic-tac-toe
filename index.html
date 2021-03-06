@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="object.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>Tic-Tac-Toe</h1>
+    <main>
+      <div id="form-and-list">
+        <form id="player-form">
+          <label for="player-name">Enter Players:</label>
+          <input class="player-name" type="text" id="player-1" required />
+          <input
+            class="player-name"
+            type="text"
+            list="computer"
+            id="player-2"
+            required
+          />
+          <datalist id="computer">
+            <option>Computer</option>
+          </datalist>
+          <button id="add">ADD</button>
+        </form>
+        <ul id="player-list"></ul>
+        <div id="display"></div>
+      </div>
+      <div id="board"></div>
+    </main>
+    <div id="control">
+      <button id="start-over">START OVER</button>
+    </div>
+  </body>
+</html>

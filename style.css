@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin: 30px 0 60px 0;
+}
+
+#board {
+    height: 400px;
+    width: 400px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 5px;
+
+    margin-left: 50px;
+
+    border: 2px solid green;
+    border-radius: 10px;
+    padding: 10px;
+}
+.cell {
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px -2px gray;
+}
+#enter-players {
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+}
+
+#form-and-list {
+    display: flex;
+    flex-direction: column;
+    border: orange 2px solid;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    height: 400px;
+    width: 360px;
+}
+#player-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.player-name {
+    border: green 1px solid;
+    padding: 10px;
+    margin-top: 10px;
+}
+.player {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+button {
+    color: white;
+    background-color: green;
+}
+#add {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+#start-over {
+    padding: 16px 30px;
+    font-size: 20px;
+}
+.glyphicon-remove {
+    color: green;
+    font-size: 14px;
+}
+.glyphicon-remove:hover {
+    color: red;
+}
+
+#x-or-o {
+    color: gray;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#board {
+    margin: 0;
+    margin-top: 30px;
+    height: calc(400px*0.8);
+    width: calc(400px*0.8);
+}
+#form-and-list {
+    height: calc(400px*0.8);
+    width: calc(360px*0.8);
+}
+}
